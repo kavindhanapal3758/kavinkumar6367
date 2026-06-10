@@ -1,27 +1,27 @@
-'''#1.take your name as input and print it in uppercase
+'''#1.
 a="kavinkumar"
 print(a.upper())
 
-#take a sentence and convert it into lowercase
+#2.
 b="you can do it"
 print(b.lower())
 
-#Enter a sentence and print it with the first letter capitalized.
+#3.
 c="title"
 print(c.capitalize())
 
-#use format() to display your name and age in a sentence
+#4.
 name="kavinkumar"
 age=18
 print("my name is {}and I am {} years old.".format(name,age))
 
-#find the index of a given character in a word.
+#5.
 d="try your best"
 print(d.index('o'))
 print(d.index('y'))
 print(d.index('t'))
 
-#find the position of a substring in a sentence using find().
+#6.
 
 sentence="python is easy to learn"
 substring="1"
@@ -30,7 +30,7 @@ position=sentence.find(substring)
 
 print("position:",position)
 
-#check  if a word ends with "ing" using endswith()
+#7.
 
 e=input("Enter a word:")
 
@@ -39,7 +39,7 @@ if e.endswith("ing"):
 else:
     print("the word does not end with 'ing'.")
 
-#print a string with tabs (\t) and then use expandtabs()to show spaces
+#8.
 
 text = "name\tof\tthe company"
 print("Original string:")
@@ -84,7 +84,7 @@ j=input("Enter a string:")
 if j.isascii():
     print("the string contains only ASCII characters.")
 else:
-    print("the string contains non-ASCII characters.")'''
+    print("the string contains non-ASCII characters.")
 
 #14.
 
@@ -93,7 +93,7 @@ k= input("Enter a string:")
 if k.isalpha():
     print("the string is isalpha.")
 else:
-    print("the string is not isalpha.")
+    print("the string is not isalpha.")'''
 
 
 
