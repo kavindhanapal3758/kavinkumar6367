@@ -176,6 +176,79 @@ while i<=20:
 print(i)
 i+=1
 
+#print number from 1 to 100 and stop at 50.
+
+i=100
+while i<=100:
+    if i==50:
+     break
+print(i)
+i+=1
+
+#continue
+#print number from 1 to 10,skipping 5.
+i=10
+while i>1
+    if i==5:
+       continue
+    print(i)
+
+#print number from 1to 20, skipping 10.
+i=20
+while i>1:
+ if  i==10:
+     continue
+ print(i)
+ i-=1
+
+#print only odd number from 1 to 20.
+i=20
+while i>1:
+    if i%2==0:
+        continue
+     print(i)
+     i-=1
+
+#pass
+#create a while loop with a pass statement
+i=1
+while i<6:
+    if i==4:
+       break
+
+#print number from 1 to 5 and use pass when the number is 3.
+
+i=1
+while i<5:
+    if i==3:
+      break
+    print(i)
+    i+=1
+
+#use pass inside an if condition in a while loop.
+i=1
+while i<1:
+      if i==5:
+         break
+       print(i)
+       i-=1
+
+#mixed question
+#print numbers from 1 to 20,skip 5, and stop at 15.
+for i in range(1,20):
+    if i==15:
+       break
+    print(i)
+for i in range(1,20):
+    if i==5:
+        continue
+     print(i)
+
+#print only odd number using continue.
+for i in range(1,50,1):
+    if i%2==0:
+       break
+    print(i). 
 
 
 
