@@ -1,0 +1,200 @@
+1.math module tasks
+
+
+
+# Task 1
+print("Square root of 144 =", math.sqrt(144))
+print("Power of 5³ =", math.pow(5,3))
+print("Factorial of 6 =", math.factorial(6))
+
+# Task 2
+print("Ceil(5.2) =", math.ceil(5.2))
+print("Floor(5.8) =", math.floor(5.8))
+print("GCD(24,36) =", math.gcd(24,36))
+
+# Task 3: 
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operator = input("Enter operator (+,-,*,/): ")
+
+if operator == "+":
+    print("Result =", num1 + num2)
+
+elif operator == "-":
+    print("Result =", num1 - num2)
+
+elif operator == "*":
+    print("Result =", num1 * num2)
+
+elif operator == "/":
+    print("Result =", num1 / num2)
+
+else:
+    print("Invalid operator")
+
+
+
+# 2. DATETIME MODULE TASKS
+
+
+from datetime import datetime
+
+now = datetime.now()
+
+# Task 1
+print("Current Date:", now.date())
+print("Current Time:", now.time())
+print("Current Year:", now.year)
+
+# Task 2
+dob = datetime(2008,5,15)   # Change your DOB
+
+age = now.year - dob.year
+print("Age =", age)
+
+# Task 3
+print("Today's Date =", now.strftime("%d-%m-%Y")
+      
+      
+      
+# 3. DATE MODULE TASKS
+
+
+from datetime import date
+
+# Task 1
+birthday = date(2008,5,15)   # Change DOB
+print("Birthday:", birthday)
+
+# Task 2
+today = date.today()
+
+difference = today - birthday
+print("Difference:", difference)
+
+# Task 3
+print("Day =", birthday.day)
+print("Month =", birthday.month)
+print("Year =", birthday.year)
+
+
+
+# 4. CALENDAR MODULE TASKS
+
+
+import calendar
+
+# Task 1
+print(calendar.month(today.year, today.month))
+
+# Task 2
+print(calendar.calendar(2026))
+
+# Task 3
+print("2024:", calendar.isleap(2024))
+print("2025:", calendar.isleap(2025))
+print("2028:", calendar.isleap(2028))
+
+# Task 4
+day_number = calendar.weekday(
+    birthday.year,
+    birthday.month,
+    birthday.day
+)
+
+days = ["Monday","Tuesday",
+        "Wednesday","Thursday",
+        "Friday","Saturday",
+        "Sunday"]
+
+print("Birthday Weekday:",
+      days[day_number])
+
+
+
+# 5. PYWHATKIT TASKS
+
+
+import pywhatkit as kit
+
+# Task 1
+kit.sendwhatmsg(
+    "+911234567890",    # Enter phone number
+    "Hello from Python",
+    18,
+    30
+)
+
+# Task 2
+kit.search("Python Programming")
+
+# Task 3
+kit.playonyt("Python Tutorial")
+
+# Task 4
+kit.text_to_handwriting(
+    "Python Programming"
+)
+
+
+
+# 6. RANDOM MODULE TASKS
+
+
+import random
+
+# Task 1
+print("Random Number:",
+      random.randint(1,100))
+
+# Task 2
+otp = random.randint(100000,999999)
+print("OTP =", otp)
+
+# Task 3
+dice = random.randint(1,6)
+print("Dice =", dice)
+
+# Task 4
+
+choices = ["Rock",
+           "Paper",
+           "Scissors"]
+
+computer = random.choice(choices)
+
+user = input(
+"Enter Rock/Paper/Scissors: "
+)
+
+print("Computer:", computer)
+
+if user == computer:
+    print("Match Draw")
+
+elif (user=="Rock" and computer=="Scissors") or \
+     (user=="Paper" and computer=="Rock") or \
+     (user=="Scissors" and computer=="Paper"):
+    print("You Win")
+
+else:
+    print("You Lose")
+
+
+
+# 7. NUMPY MODULE TASKS
+
+
+import numpy as np
+
+# Task 1
+arr = np.array([10,20,30,40,50])
+
+print("Array =", arr)
+
+# Task 2
+print("Sum =", np.sum(arr))
+print("Mean =", np.mean(arr))
+print("Maximum =", np.max(arr))
+print("Minimum =", np.min(arr))
